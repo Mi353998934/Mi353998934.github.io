@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on pluto&#39;s blog</title>
+    <link>https://blog.zxsy.online/posts/</link>
+    <description>Recent content in Posts on pluto&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 26 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.zxsy.online/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Welcome to Pluto&#39;s blog</title>
+      <link>https://blog.zxsy.online/2021/10/welcome-to-plutos-blog/</link>
+      <pubDate>Tue, 26 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.zxsy.online/2021/10/welcome-to-plutos-blog/</guid>
+      <description>Welcome to my blog.
+Here I share my learning experience and various open source technologies.
+General
+ Authors: pluto Version: 21-10-26-BETA Compatibility: Hugo v0.88  </description>
+    </item>
+    
+  </channel>
+</rss>
