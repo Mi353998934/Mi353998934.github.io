@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on pluto&#39;s blog</title>
+    <link>https://blog.zxsy.online/tags/docker/</link>
+    <description>Recent content in Docker on pluto&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 28 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.zxsy.online/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker (1) installation</title>
+      <link>https://blog.zxsy.online/2021/10/docker-1-installation/</link>
+      <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.zxsy.online/2021/10/docker-1-installation/</guid>
+      <description>Developers Love Docker.
+Businesses Trust It.
+Build safer, share wider, run faster: New updates to our product subscriptions.</description>
+    </item>
+    
+  </channel>
+</rss>

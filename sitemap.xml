@@ -2,13 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.zxsy.online/tags/apache/</loc>
+    <lastmod>2021-10-28T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://blog.zxsy.online/categories/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.zxsy.online/tags/configuration/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://blog.zxsy.online/tags/docker/</loc>
+    <lastmod>2021-10-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.zxsy.online/categories/docker/</loc>
+    <lastmod>2021-10-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.zxsy.online/2021/10/docker-1-installation/</loc>
+    <lastmod>2021-10-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.zxsy.online/tags/error/</loc>
+    <lastmod>2021-10-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.zxsy.online/categories/error/</loc>
+    <lastmod>2021-10-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.zxsy.online/2021/10/error-could-not-initialize-random-number-generator/</loc>
+    <lastmod>2021-10-28T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://blog.zxsy.online/tags/installation/</loc>
+    <lastmod>2021-10-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.zxsy.online/tags/kernel/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.zxsy.online/tags/maven/</loc>
@@ -32,7 +56,16 @@
     <loc>https://blog.zxsy.online/tags/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://blog.zxsy.online/tags/tomcat/</loc>
+    <lastmod>2021-10-28T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://blog.zxsy.online/tags/tool/</loc>
+    <lastmod>2021-10-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.zxsy.online/tags/virtualization/</loc>
+    <lastmod>2021-10-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.zxsy.online/categories/virtualization/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.zxsy.online/tags/blog/</loc>
