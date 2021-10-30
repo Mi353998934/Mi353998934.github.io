@@ -2,125 +2,125 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on pluto&#39;s blog</title>
-    <link>https://blog.zxsy.online/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on pluto&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 28 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.zxsy.online/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>apache</title>
-      <link>https://blog.zxsy.online/tags/apache/</link>
+      <link>/tags/apache/</link>
       <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.zxsy.online/tags/apache/</guid>
+      <guid>/tags/apache/</guid>
       <description></description>
     </item>
     
     <item>
       <title>configuration</title>
-      <link>https://blog.zxsy.online/tags/configuration/</link>
+      <link>/tags/configuration/</link>
       <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.zxsy.online/tags/configuration/</guid>
+      <guid>/tags/configuration/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Docker</title>
-      <link>https://blog.zxsy.online/tags/docker/</link>
+      <link>/tags/docker/</link>
       <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.zxsy.online/tags/docker/</guid>
+      <guid>/tags/docker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Error</title>
-      <link>https://blog.zxsy.online/tags/error/</link>
+      <link>/tags/error/</link>
       <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.zxsy.online/tags/error/</guid>
+      <guid>/tags/error/</guid>
       <description></description>
     </item>
     
     <item>
       <title>installation</title>
-      <link>https://blog.zxsy.online/tags/installation/</link>
+      <link>/tags/installation/</link>
       <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.zxsy.online/tags/installation/</guid>
+      <guid>/tags/installation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>kernel</title>
-      <link>https://blog.zxsy.online/tags/kernel/</link>
+      <link>/tags/kernel/</link>
       <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.zxsy.online/tags/kernel/</guid>
+      <guid>/tags/kernel/</guid>
       <description></description>
     </item>
     
     <item>
       <title>maven</title>
-      <link>https://blog.zxsy.online/tags/maven/</link>
+      <link>/tags/maven/</link>
       <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.zxsy.online/tags/maven/</guid>
+      <guid>/tags/maven/</guid>
       <description></description>
     </item>
     
     <item>
       <title>POM</title>
-      <link>https://blog.zxsy.online/tags/pom/</link>
+      <link>/tags/pom/</link>
       <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.zxsy.online/tags/pom/</guid>
+      <guid>/tags/pom/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tomcat</title>
-      <link>https://blog.zxsy.online/tags/tomcat/</link>
+      <link>/tags/tomcat/</link>
       <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.zxsy.online/tags/tomcat/</guid>
+      <guid>/tags/tomcat/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tool</title>
-      <link>https://blog.zxsy.online/tags/tool/</link>
+      <link>/tags/tool/</link>
       <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.zxsy.online/tags/tool/</guid>
+      <guid>/tags/tool/</guid>
       <description></description>
     </item>
     
     <item>
       <title>virtualization</title>
-      <link>https://blog.zxsy.online/tags/virtualization/</link>
+      <link>/tags/virtualization/</link>
       <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.zxsy.online/tags/virtualization/</guid>
+      <guid>/tags/virtualization/</guid>
       <description></description>
     </item>
     
     <item>
       <title>blog</title>
-      <link>https://blog.zxsy.online/tags/blog/</link>
+      <link>/tags/blog/</link>
       <pubDate>Tue, 26 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.zxsy.online/tags/blog/</guid>
+      <guid>/tags/blog/</guid>
       <description></description>
     </item>
     
     <item>
       <title>normal</title>
-      <link>https://blog.zxsy.online/tags/normal/</link>
+      <link>/tags/normal/</link>
       <pubDate>Tue, 26 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.zxsy.online/tags/normal/</guid>
+      <guid>/tags/normal/</guid>
       <description></description>
     </item>
     

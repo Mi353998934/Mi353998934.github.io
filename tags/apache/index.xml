@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>apache on pluto&#39;s blog</title>
-    <link>https://blog.zxsy.online/tags/apache/</link>
+    <link>/tags/apache/</link>
     <description>Recent content in apache on pluto&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 28 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.zxsy.online/tags/apache/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/apache/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Error - Could not initialize random number generator</title>
-      <link>https://blog.zxsy.online/2021/10/error-could-not-initialize-random-number-generator/</link>
+      <link>/2021/10/error-could-not-initialize-random-number-generator/</link>
       <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.zxsy.online/2021/10/error-could-not-initialize-random-number-generator/</guid>
+      <guid>/2021/10/error-could-not-initialize-random-number-generator/</guid>
       <description></description>
     </item>
     

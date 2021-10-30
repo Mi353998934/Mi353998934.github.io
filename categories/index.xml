@@ -2,53 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on pluto&#39;s blog</title>
-    <link>https://blog.zxsy.online/categories/</link>
+    <link>/categories/</link>
     <description>Recent content in Categories on pluto&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 28 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.zxsy.online/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker</title>
-      <link>https://blog.zxsy.online/categories/docker/</link>
+      <link>/categories/docker/</link>
       <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.zxsy.online/categories/docker/</guid>
+      <guid>/categories/docker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Error</title>
-      <link>https://blog.zxsy.online/categories/error/</link>
+      <link>/categories/error/</link>
       <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.zxsy.online/categories/error/</guid>
+      <guid>/categories/error/</guid>
       <description></description>
     </item>
     
     <item>
       <title>maven</title>
-      <link>https://blog.zxsy.online/categories/maven/</link>
+      <link>/categories/maven/</link>
       <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.zxsy.online/categories/maven/</guid>
+      <guid>/categories/maven/</guid>
       <description></description>
     </item>
     
     <item>
       <title>virtualization</title>
-      <link>https://blog.zxsy.online/categories/virtualization/</link>
+      <link>/categories/virtualization/</link>
       <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.zxsy.online/categories/virtualization/</guid>
+      <guid>/categories/virtualization/</guid>
       <description></description>
     </item>
     
     <item>
       <title>blog</title>
-      <link>https://blog.zxsy.online/categories/blog/</link>
+      <link>/categories/blog/</link>
       <pubDate>Tue, 26 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.zxsy.online/categories/blog/</guid>
+      <guid>/categories/blog/</guid>
       <description></description>
     </item>
     

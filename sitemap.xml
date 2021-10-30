@@ -2,84 +2,84 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.zxsy.online/tags/apache/</loc>
+    <loc>/tags/apache/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.zxsy.online/categories/</loc>
+    <loc>/categories/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.zxsy.online/tags/configuration/</loc>
+    <loc>/tags/configuration/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.zxsy.online/tags/docker/</loc>
+    <loc>/tags/docker/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.zxsy.online/categories/docker/</loc>
+    <loc>/categories/docker/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.zxsy.online/2021/10/docker-1-installation/</loc>
+    <loc>/2021/10/docker-1-installation/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.zxsy.online/tags/error/</loc>
+    <loc>/tags/error/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.zxsy.online/categories/error/</loc>
+    <loc>/categories/error/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.zxsy.online/2021/10/error-could-not-initialize-random-number-generator/</loc>
+    <loc>/2021/10/error-could-not-initialize-random-number-generator/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.zxsy.online/tags/installation/</loc>
+    <loc>/tags/installation/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.zxsy.online/tags/kernel/</loc>
+    <loc>/tags/kernel/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.zxsy.online/tags/maven/</loc>
+    <loc>/tags/maven/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.zxsy.online/categories/maven/</loc>
+    <loc>/categories/maven/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.zxsy.online/2021/10/maven-installation-and-configuration-details/</loc>
+    <loc>/2021/10/maven-installation-and-configuration-details/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.zxsy.online/</loc>
+    <loc>/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.zxsy.online/tags/pom/</loc>
+    <loc>/tags/pom/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.zxsy.online/posts/</loc>
+    <loc>/posts/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.zxsy.online/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.zxsy.online/tags/tomcat/</loc>
+    <loc>/tags/tomcat/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.zxsy.online/tags/tool/</loc>
+    <loc>/tags/tool/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.zxsy.online/tags/virtualization/</loc>
+    <loc>/tags/virtualization/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.zxsy.online/categories/virtualization/</loc>
+    <loc>/categories/virtualization/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.zxsy.online/tags/blog/</loc>
+    <loc>/tags/blog/</loc>
     <lastmod>2021-10-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.zxsy.online/categories/blog/</loc>
+    <loc>/categories/blog/</loc>
     <lastmod>2021-10-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.zxsy.online/tags/normal/</loc>
+    <loc>/tags/normal/</loc>
     <lastmod>2021-10-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.zxsy.online/2021/10/welcome-to-plutos-blog/</loc>
+    <loc>/2021/10/welcome-to-plutos-blog/</loc>
     <lastmod>2021-10-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.zxsy.online/archives/</loc>
+    <loc>/archives/</loc>
   </url>
 </urlset>
