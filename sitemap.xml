@@ -2,84 +2,84 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/tags/apache/</loc>
+    <loc>https://www.plutoblog.ml/tags/apache/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>https://www.plutoblog.ml/categories/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/configuration/</loc>
+    <loc>https://www.plutoblog.ml/tags/configuration/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/docker/</loc>
+    <loc>https://www.plutoblog.ml/tags/docker/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/docker/</loc>
+    <loc>https://www.plutoblog.ml/categories/docker/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/2021/10/docker-1-installation/</loc>
+    <loc>https://www.plutoblog.ml/2021/10/docker-1-installation/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/error/</loc>
+    <loc>https://www.plutoblog.ml/tags/error/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/error/</loc>
+    <loc>https://www.plutoblog.ml/categories/error/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/2021/10/error-could-not-initialize-random-number-generator/</loc>
+    <loc>https://www.plutoblog.ml/2021/10/error-could-not-initialize-random-number-generator/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/installation/</loc>
+    <loc>https://www.plutoblog.ml/tags/installation/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/kernel/</loc>
+    <loc>https://www.plutoblog.ml/tags/kernel/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/maven/</loc>
+    <loc>https://www.plutoblog.ml/tags/maven/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/maven/</loc>
+    <loc>https://www.plutoblog.ml/categories/maven/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/2021/10/maven-installation-and-configuration-details/</loc>
+    <loc>https://www.plutoblog.ml/2021/10/maven-installation-and-configuration-details/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/</loc>
+    <loc>https://www.plutoblog.ml/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/pom/</loc>
+    <loc>https://www.plutoblog.ml/tags/pom/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/</loc>
+    <loc>https://www.plutoblog.ml/posts/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>https://www.plutoblog.ml/tags/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/tomcat/</loc>
+    <loc>https://www.plutoblog.ml/tags/tomcat/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/tool/</loc>
+    <loc>https://www.plutoblog.ml/tags/tool/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/virtualization/</loc>
+    <loc>https://www.plutoblog.ml/tags/virtualization/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/virtualization/</loc>
+    <loc>https://www.plutoblog.ml/categories/virtualization/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/blog/</loc>
+    <loc>https://www.plutoblog.ml/tags/blog/</loc>
     <lastmod>2021-10-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/blog/</loc>
+    <loc>https://www.plutoblog.ml/categories/blog/</loc>
     <lastmod>2021-10-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/normal/</loc>
+    <loc>https://www.plutoblog.ml/tags/normal/</loc>
     <lastmod>2021-10-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/2021/10/welcome-to-plutos-blog/</loc>
+    <loc>https://www.plutoblog.ml/2021/10/welcome-to-plutos-blog/</loc>
     <lastmod>2021-10-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/archives/</loc>
+    <loc>https://www.plutoblog.ml/archives/</loc>
   </url>
 </urlset>

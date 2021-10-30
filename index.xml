@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>pluto&#39;s blog</title>
-    <link>/</link>
+    <link>https://www.plutoblog.ml/</link>
     <description>Recent content on pluto&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 28 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.plutoblog.ml/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker (1) installation</title>
-      <link>/2021/10/docker-1-installation/</link>
+      <link>https://www.plutoblog.ml/2021/10/docker-1-installation/</link>
       <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>/2021/10/docker-1-installation/</guid>
+      <guid>https://www.plutoblog.ml/2021/10/docker-1-installation/</guid>
       <description>Developers Love Docker.
 Businesses Trust It.
 Build safer, share wider, run faster: New updates to our product subscriptions.</description>
@@ -20,28 +20,28 @@ Build safer, share wider, run faster: New updates to our product subscriptions.<
     
     <item>
       <title>Error - Could not initialize random number generator</title>
-      <link>/2021/10/error-could-not-initialize-random-number-generator/</link>
+      <link>https://www.plutoblog.ml/2021/10/error-could-not-initialize-random-number-generator/</link>
       <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>/2021/10/error-could-not-initialize-random-number-generator/</guid>
+      <guid>https://www.plutoblog.ml/2021/10/error-could-not-initialize-random-number-generator/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Maven installation and configuration details</title>
-      <link>/2021/10/maven-installation-and-configuration-details/</link>
+      <link>https://www.plutoblog.ml/2021/10/maven-installation-and-configuration-details/</link>
       <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>/2021/10/maven-installation-and-configuration-details/</guid>
+      <guid>https://www.plutoblog.ml/2021/10/maven-installation-and-configuration-details/</guid>
       <description>&lt;p&gt;Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project&amp;rsquo;s build, reporting and documentation from a central piece of information.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Welcome to Pluto&#39;s blog</title>
-      <link>/2021/10/welcome-to-plutos-blog/</link>
+      <link>https://www.plutoblog.ml/2021/10/welcome-to-plutos-blog/</link>
       <pubDate>Tue, 26 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>/2021/10/welcome-to-plutos-blog/</guid>
+      <guid>https://www.plutoblog.ml/2021/10/welcome-to-plutos-blog/</guid>
       <description>&lt;p&gt;Welcome to my blog.&lt;/p&gt;
 &lt;p&gt;Here I share my learning experience and various open source technologies.&lt;/p&gt;</description>
     </item>

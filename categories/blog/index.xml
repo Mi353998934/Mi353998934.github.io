@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>blog on pluto&#39;s blog</title>
-    <link>/categories/blog/</link>
+    <link>https://www.plutoblog.ml/categories/blog/</link>
     <description>Recent content in blog on pluto&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 26 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.plutoblog.ml/categories/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Welcome to Pluto&#39;s blog</title>
-      <link>/2021/10/welcome-to-plutos-blog/</link>
+      <link>https://www.plutoblog.ml/2021/10/welcome-to-plutos-blog/</link>
       <pubDate>Tue, 26 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>/2021/10/welcome-to-plutos-blog/</guid>
+      <guid>https://www.plutoblog.ml/2021/10/welcome-to-plutos-blog/</guid>
       <description>&lt;p&gt;Welcome to my blog.&lt;/p&gt;
 &lt;p&gt;Here I share my learning experience and various open source technologies.&lt;/p&gt;</description>
     </item>
