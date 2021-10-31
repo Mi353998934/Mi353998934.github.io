@@ -34,7 +34,7 @@
     }
     
   },
-  "description": "Developers Love Docker.\nBusinesses Trust It.\nBuild safer, share wider, run faster: New updates to our product subscriptions.",
+  "description": "Developers Love Docker.\nBusinesses Trust It.\n",
   "keywords": ["Docker, installation, virtualization, tool", "Java, Technology"]
 }
 
@@ -46,13 +46,11 @@
 <meta name="author" content="Pluto">
 <meta name="keywords" content="Docker, installation, virtualization, tool, Java, Technology">
 <meta name="description" content="Developers Love Docker.
-Businesses Trust It.
-Build safer, share wider, run faster: New updates to our product subscriptions.">
+Businesses Trust It.">
 
 
 <meta property="og:description" content="Developers Love Docker.
-Businesses Trust It.
-Build safer, share wider, run faster: New updates to our product subscriptions.">
+Businesses Trust It.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Docker (1) installation">
 <meta name="twitter:title" content="Docker (1) installation">
@@ -60,11 +58,9 @@ Build safer, share wider, run faster: New updates to our product subscriptions."
 <meta property="twitter:url" content="https://www.plutoblog.ml/2021/10/docker-1-installation/">
 <meta property="og:site_name" content="pluto&#39;s blog">
 <meta property="og:description" content="Developers Love Docker.
-Businesses Trust It.
-Build safer, share wider, run faster: New updates to our product subscriptions.">
+Businesses Trust It.">
 <meta name="twitter:description" content="Developers Love Docker.
-Businesses Trust It.
-Build safer, share wider, run faster: New updates to our product subscriptions.">
+Businesses Trust It.">
 <meta property="og:locale" content="zh-cn">
 
   
@@ -289,8 +285,451 @@ Build safer, share wider, run faster: New updates to our product subscriptions."
               <p><strong>Developers Love Docker.</strong></p>
 <p><strong>Businesses Trust It.</strong></p>
 <p>Build safer, share wider, run faster: New updates to our product subscriptions.</p>
-<!-- raw HTML omitted -->
+<h1 id="install-docker-engine-on-centos">Install Docker Engine on CentOS</h1>
+<p>To get started with Docker Engine on CentOS, make sure you meet the prerequisites, then install Docker.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<h4 id="os-requirements">OS requirements</h4>
+<p>To install Docker Engine, you need a <strong>maintained version</strong> of CentOS 7 or 8. <!-- raw HTML omitted --><strong>Archived versions</strong><!-- raw HTML omitted --> aren’t supported or <!-- raw HTML omitted --><strong>tested</strong><!-- raw HTML omitted -->.</p>
+<p>The <code>centos-extras</code> repository must be enabled. This repository is enabled by default, but if you have disabled it, you need to <code>re-enable it</code>.</p>
+<p>The <strong>overlay2</strong> storage driver is recommended.</p>
+<h4 id="uninstall-old-versions">Uninstall old versions</h4>
+<p><strong>Older versions</strong> of Docker were called <code>docker</code> or <code>docker-engine</code>. If these are installed, <strong>uninstall them</strong>, along with <strong>associated dependencies</strong>.</p>
 
+  
+    
+  
+  
+  
+  
+
+
+<figure class="highlight  language-">
+  <figcaption>
+    
+      <span>shell</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language- "><code class="">$ sudo yum remove docker \
+                  docker-client \
+                  docker-client-latest \
+                  docker-common \
+                  docker-latest \
+                  docker-latest-logrotate \
+                  docker-logrotate \
+                  docker-engine</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+
+<blockquote>
+<p>It&rsquo;s OK if <code>yum</code> reports that none of these packages are installed.
+The contents of <code>/var/lib/docker/</code>, including images, containers, volumes, and networks, are preserved. The Docker Engine package is now called <code>docker-ce</code>.</p>
+</blockquote>
+<h2 id="installation-methods">Installation methods</h2>
+<p>You can install Docker Engine in different ways, depending on your needs:</p>
+<ul>
+<li>Most users [set up Docker’s repositories](#Install using the repository) and install from them, for ease of installation and upgrade tasks. This is the recommended approach.</li>
+<li>Some users download the <strong>RPM package</strong> and <a href="https://docs.docker.com/engine/install/centos/#install-from-a-package">install it manually</a> and manage upgrades completely manually. This is <!-- raw HTML omitted --><strong>useful</strong><!-- raw HTML omitted --> in situations such as installing Docker on air-gapped systems with <!-- raw HTML omitted --><strong>no access to the internet</strong><!-- raw HTML omitted -->.</li>
+<li>In testing and development environments, some users choose to use automated <a href="https://docs.docker.com/engine/install/centos/#install-using-the-convenience-script">convenience scripts</a> to install Docker.</li>
+</ul>
+<h3 id="install-using-the-repository">Install using the repository</h3>
+<p>Before you install Docker Engine for the first time on a new host machine, you need to set up the Docker repository. Afterward, you can install and update Docker from the repository.</p>
+<h4 id="install-related-system-tools">Install related system tools</h4>
+
+  
+    
+  
+  
+  
+  
+
+
+<figure class="highlight  language-">
+  <figcaption>
+    
+      <span>shell</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language- "><code class="">$ sudo yum install -y yum-utils device-mapper-persistent-data lvm2</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+
+<h4 id="set-up-the-repository">Set up the repository</h4>
+<p>Install the <code>yum-utils</code> package (which provides the <code>yum-config-manager</code> utility) and set up the <strong>stable</strong> repository.</p>
+<blockquote>
+<p>Docker official repository</p>
+</blockquote>
+
+  
+    
+  
+  
+  
+  
+
+
+<figure class="highlight  language-">
+  <figcaption>
+    
+      <span>shell</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language- "><code class="">$sudo yum-config-manager \
+    --add-repo \
+    https://download.docker.com/linux/centos/docker-ce.repo</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+
+<blockquote>
+<p>Ali Cloud mirror repository</p>
+</blockquote>
+
+  
+    
+  
+  
+  
+  
+
+
+<figure class="highlight  language-">
+  <figcaption>
+    
+      <span>shell</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language- "><code class="">$ sudo yum-config-manager \
+    --add-repo \
+    https://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
+$ sudo sed -i &#39;s&#43;download.docker.com&#43;mirrors.aliyun.com/docker-ce&#43;&#39; /etc/yum.repos.d/docker-ce.repo</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+
+<h4 id="install-docker-engine">Install Docker Engine</h4>
+<ol>
+<li>
+<p>Install the <em>latest version</em> of Docker Engine and containerd, or go to the next step to install a specific version:</p>
+
+  
+    
+  
+  
+  
+  
+
+
+<figure class="highlight  language-">
+  <figcaption>
+    
+      <span>shell</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language- "><code class="">$ sudo yum install docker-ce docker-ce-cli containerd.io</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+
+<p>If prompted to accept the GPG key, verify that the fingerprint matches <code>060A 61C5 1B55 8A7F 742B 77AA C52F EB6B 621E 9F35</code>, and if so, accept it.</p>
+<p>This command installs Docker, but it doesn’t start Docker. It also creates a <code>docker</code> group, however, it doesn’t add any users to the group by default.</p>
+</li>
+<li>
+<p>To install a specific version of Docker Engine, list the available versions in the repo, then select and install:</p>
+<p>a. List and sort the versions available in your repo. This example sorts results by version number, highest to lowest, and is truncated:</p>
+
+  
+    
+  
+  
+  
+  
+
+
+<figure class="highlight  language-">
+  <figcaption>
+    
+      <span>shell</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language- "><code class=""> $ yum list docker-ce --showduplicates | sort -r</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+
+<p>The list returned depends on which repositories are enabled, and is specific to your version of CentOS (indicated by the <code>.el7</code> suffix in this example).</p>
+<p>b. Install a specific version by its fully qualified package name, which is the package name (<code>docker-ce</code>) plus the version string (2nd column) starting at the first colon (<code>:</code>), up to the first hyphen, separated by a hyphen (<code>-</code>). For example, <code>docker-ce-18.09.1</code>.</p>
+
+  
+    
+  
+  
+  
+  
+
+
+<figure class="highlight  language-">
+  <figcaption>
+    
+      <span>shell</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language- "><code class=""> $ sudo yum install docker-ce-&lt;VERSION_STRING&gt; docker-ce-cli-&lt;VERSION_STRING&gt; containerd.io</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+
+<p>This command installs Docker, but it doesn’t start Docker. It also creates a docker group, however, it doesn’t add any users to the group by default.</p>
+</li>
+</ol>
+<h4 id="start-docker">Start Docker</h4>
+
+  
+    
+  
+  
+  
+  
+
+
+<figure class="highlight  language-">
+  <figcaption>
+    
+      <span>shell</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br><span class="line">2</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language- "><code class="">$ sudo systemctl start docker
+$ sudo enable docker</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+
+<h4 id="verify-that-docker-engine-is-installed">Verify that Docker Engine is installed</h4>
+
+  
+    
+  
+  
+  
+  
+
+
+<figure class="highlight  language-">
+  <figcaption>
+    
+      <span>shell</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language- "><code class="">$  sudo docker run hello-world</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+
+<p>​	This command downloads a test image and runs it in a container. When the container runs, it prints a message and exits.</p>
+<h4 id="upgrade-docker-engine">Upgrade Docker Engine</h4>
+<p>To upgrade Docker Engine, follow the [installation instructions](#Install Docker Engine), choosing the new version you want to install.</p>
+<h3 id="install-from-a-package">Install from a package</h3>
+<p>If you cannot use Docker’s repository to install Docker, you can download the <code>.rpm</code> file for your release and install it manually. You need to download a new file each time you want to upgrade Docker Engine.</p>
+<ol>
+<li>
+<p>Go to <a href="https://download.docker.com/linux/centos/">https://download.docker.com/linux/centos/</a> and choose your version of CentOS. Then browse to <code>x86_64/stable/Packages/</code> and download the <code>.rpm</code> file for the Docker version you want to install.</p>
+<blockquote>
+<p><strong>Note</strong></p>
+<p>To install a <strong>nightly</strong> or <strong>test</strong> (pre-release) package, change the word <code>stable</code> in the above URL to <code>nightly</code> or <code>test</code>. <a href="https://docs.docker.com/engine/install/">Learn about <strong>nightly</strong> and <strong>test</strong> channels</a>.</p>
+</blockquote>
+</li>
+<li>
+<p>Install Docker Engine, changing the path below to the path where you downloaded the Docker package.</p>
+
+  
+    
+  
+  
+  
+  
+
+
+<figure class="highlight  language-">
+  <figcaption>
+    
+      <span>shell</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language- "><code class="">$ sudo yum install /path/to/package.rpm</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+
+<blockquote>
+<p>Docker is installed but not started. The <code>docker</code> group is created, but no users are added to the group.</p>
+</blockquote>
+</li>
+</ol>
+<h3 id="install-using-the-convenience-script">Install using the convenience script</h3>
+<p>This example downloads the script from <a href="https://get.docker.com/">get.docker.com</a> and runs it to install the latest stable release of Docker on Linux:</p>
+
+  
+    
+  
+  
+  
+  
+
+
+<figure class="highlight  language-">
+  <figcaption>
+    
+      <span>shell</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language- "><code class="">$ curl -fsSL https://get.docker.com -o get-docker.sh
+
+$ sudo sh get-docker.sh</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+
+<h1 id="install-docker-engine-on-kali">Install Docker Engine on Kali</h1>
+
+  
+    
+  
+  
+  
+  
+
+
+<figure class="highlight  language-">
+  <figcaption>
+    
+      <span>shell</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language- "><code class="">sudo apt-get update
+
+sudo apt-get install -y apt-transport-https ca-certificates
+
+sudo apt-get install dirmngr
+
+sudo curl -fsSL https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/debian/gpg | sudo apt-key add -
+
+sudo echo &#39;deb https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/debian/ buster stable&#39; | sudo tee /etc/apt/sources.list.d/docker.list
+
+sudo apt-get update
+
+apt install docker-ce</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
               
 
 
