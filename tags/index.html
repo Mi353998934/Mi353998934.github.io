@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="en-us">
   <head>
     
     <script type="application/ld+json">
@@ -40,7 +40,7 @@
 <meta property="og:site_name" content="pluto&#39;s blog">
 <meta property="og:description" content="pluto&#39;s blog">
 <meta name="twitter:description" content="pluto&#39;s blog">
-<meta property="og:locale" content="zh-cn">
+<meta property="og:locale" content="en-us">
 
 
 <meta name="twitter:card" content="summary">
@@ -91,7 +91,7 @@
       <header id="header" data-behavior="2">
   <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
   <div class="header-title">
-    <a class="header-title-link" href="https://www.plutoblog.ml/" aria-label="去首页">pluto&#39;s blog</a>
+    <a class="header-title-link" href="https://www.plutoblog.ml/" aria-label="Go to homepage">pluto&#39;s blog</a>
   </div>
   
 </header>
@@ -100,8 +100,8 @@
   <div class="sidebar-container">
     
       <div class="sidebar-profile">
-        <a href="https://www.plutoblog.ml/#about" aria-label="阅读有关作者的更多信息">
-          <img class="sidebar-profile-picture" src="https://gitee.com/mciusos/picbed/raw/master/blog/image-20211026094612469.png" alt="作者的图片" />
+        <a href="https://www.plutoblog.ml/#about" aria-label="Read more about the author">
+          <img class="sidebar-profile-picture" src="https://gitee.com/mciusos/picbed/raw/master/blog/image-20211026094612469.png" alt="Author&#39;s picture" />
         </a>
         <h4 class="sidebar-profile-name">Pluto</h4>
         
@@ -117,7 +117,7 @@
     
       <i class="sidebar-button-icon fas fa-lg fa-home" aria-hidden="true"></i>
       
-      <span class="sidebar-button-desc">首页</span>
+      <span class="sidebar-button-desc">Home</span>
     </a>
   </li>
 
@@ -127,7 +127,7 @@
     
       <i class="sidebar-button-icon fas fa-lg fa-bookmark" aria-hidden="true"></i>
       
-      <span class="sidebar-button-desc">分类</span>
+      <span class="sidebar-button-desc">Categories</span>
     </a>
   </li>
 
@@ -137,7 +137,7 @@
     
       <i class="sidebar-button-icon fas fa-lg fa-tags" aria-hidden="true"></i>
       
-      <span class="sidebar-button-desc">标签</span>
+      <span class="sidebar-button-desc">Tags</span>
     </a>
   </li>
 
@@ -147,7 +147,7 @@
     
       <i class="sidebar-button-icon fas fa-lg fa-archive" aria-hidden="true"></i>
       
-      <span class="sidebar-button-desc">归档</span>
+      <span class="sidebar-button-desc">Archives</span>
     </a>
   </li>
 
@@ -157,7 +157,7 @@
     
       <i class="sidebar-button-icon fas fa-lg fa-question" aria-hidden="true"></i>
       
-      <span class="sidebar-button-desc">关于</span>
+      <span class="sidebar-button-desc">About</span>
     </a>
   </li>
 
@@ -193,17 +193,25 @@
 
         <div id="tags-archives" class="main-content-wrap">
           <form id="filter-form" action="#">
-            <input name="tag" type="text" class="form-control input--xlarge" placeholder="搜索标签" autofocus="autofocus">
+            <input name="tag" type="text" class="form-control input--xlarge" placeholder="Search tag" autofocus="autofocus">
           </form>
           <h4 class="archive-result text-color-base text-xlarge"
-              data-message-zero="没有找到标签"
-              data-message-one="找到 1 个标签"
-              data-message-other="找到 {n} 个标签"></h4>
+              data-message-zero="no tag found"
+              data-message-one="1 tag found"
+              data-message-other="{n} tags found"></h4>
 
             <section>
               
+                <a class="tag tag--primary tag--small" href="#docker-list" data-tag="docker">
+                  docker
+                </a>
+              
                 <a class="tag tag--primary tag--small" href="#installation-list" data-tag="installation">
                   installation
+                </a>
+              
+                <a class="tag tag--primary tag--small" href="#virtualization-list" data-tag="virtualization">
+                  virtualization
                 </a>
               
                 <a class="tag tag--primary tag--small" href="#apache-list" data-tag="apache">
@@ -218,8 +226,8 @@
                   configuration
                 </a>
               
-                <a class="tag tag--primary tag--small" href="#docker-list" data-tag="docker">
-                  docker
+                <a class="tag tag--primary tag--small" href="#data-volume-list" data-tag="data-volume">
+                  data-volume
                 </a>
               
                 <a class="tag tag--primary tag--small" href="#error-list" data-tag="error">
@@ -238,6 +246,10 @@
                   normal
                 </a>
               
+                <a class="tag tag--primary tag--small" href="#persistence-list" data-tag="persistence">
+                  persistence
+                </a>
+              
                 <a class="tag tag--primary tag--small" href="#pom-list" data-tag="pom">
                   pom
                 </a>
@@ -250,12 +262,50 @@
                   tool
                 </a>
               
-                <a class="tag tag--primary tag--small" href="#virtualization-list" data-tag="virtualization">
-                  virtualization
+                <a class="tag tag--primary tag--small" href="#usage-list" data-tag="usage">
+                  usage
                 </a>
               
             </section>
             <section class="boxes">
+              
+                <div id="docker-list" class="archive box" data-tag="docker">
+                  <h4 class="archive-title">
+                    <a class="link-unstyled" href="docker">
+                      docker (3)
+                    </a>
+                  </h4>
+                  <ul class="archive-posts">
+                    
+                      <li class="archive-post">
+                        <a class="archive-post-title" href="https://www.plutoblog.ml/2021/10/docker-1-installation/">
+                          Docker (1) installation
+                        </a>
+                        <span class="archive-post-date"> - 
+  October 28, 2021
+</span>
+                      </li>
+                    
+                      <li class="archive-post">
+                        <a class="archive-post-title" href="https://www.plutoblog.ml/2021/10/docker-2-basic-usage/">
+                          Docker (2) Basic Usage
+                        </a>
+                        <span class="archive-post-date"> - 
+  October 31, 2021
+</span>
+                      </li>
+                    
+                      <li class="archive-post">
+                        <a class="archive-post-title" href="https://www.plutoblog.ml/2021/11/docker-3-container-data-volume/">
+                          Docker (3) Container data volume
+                        </a>
+                        <span class="archive-post-date"> - 
+  November 1, 2021
+</span>
+                      </li>
+                    
+                  </ul>
+                </div>
               
                 <div id="installation-list" class="archive box" data-tag="installation">
                   <h4 class="archive-title">
@@ -270,7 +320,7 @@
                           Docker (1) installation
                         </a>
                         <span class="archive-post-date"> - 
-  十月 28, 2021
+  October 28, 2021
 </span>
                       </li>
                     
@@ -279,7 +329,36 @@
                           Maven installation and configuration details
                         </a>
                         <span class="archive-post-date"> - 
-  十月 28, 2021
+  October 28, 2021
+</span>
+                      </li>
+                    
+                  </ul>
+                </div>
+              
+                <div id="virtualization-list" class="archive box" data-tag="virtualization">
+                  <h4 class="archive-title">
+                    <a class="link-unstyled" href="virtualization">
+                      virtualization (2)
+                    </a>
+                  </h4>
+                  <ul class="archive-posts">
+                    
+                      <li class="archive-post">
+                        <a class="archive-post-title" href="https://www.plutoblog.ml/2021/10/docker-1-installation/">
+                          Docker (1) installation
+                        </a>
+                        <span class="archive-post-date"> - 
+  October 28, 2021
+</span>
+                      </li>
+                    
+                      <li class="archive-post">
+                        <a class="archive-post-title" href="https://www.plutoblog.ml/2021/10/docker-2-basic-usage/">
+                          Docker (2) Basic Usage
+                        </a>
+                        <span class="archive-post-date"> - 
+  October 31, 2021
 </span>
                       </li>
                     
@@ -299,7 +378,7 @@
                           Error - Could not initialize random number generator
                         </a>
                         <span class="archive-post-date"> - 
-  十月 28, 2021
+  October 28, 2021
 </span>
                       </li>
                     
@@ -319,7 +398,7 @@
                           Welcome to Pluto&#39;s blog
                         </a>
                         <span class="archive-post-date"> - 
-  十月 26, 2021
+  October 26, 2021
 </span>
                       </li>
                     
@@ -339,27 +418,27 @@
                           Maven installation and configuration details
                         </a>
                         <span class="archive-post-date"> - 
-  十月 28, 2021
+  October 28, 2021
 </span>
                       </li>
                     
                   </ul>
                 </div>
               
-                <div id="docker-list" class="archive box" data-tag="docker">
+                <div id="data-volume-list" class="archive box" data-tag="data-volume">
                   <h4 class="archive-title">
-                    <a class="link-unstyled" href="docker">
-                      docker (1)
+                    <a class="link-unstyled" href="data-volume">
+                      data-volume (1)
                     </a>
                   </h4>
                   <ul class="archive-posts">
                     
                       <li class="archive-post">
-                        <a class="archive-post-title" href="https://www.plutoblog.ml/2021/10/docker-1-installation/">
-                          Docker (1) installation
+                        <a class="archive-post-title" href="https://www.plutoblog.ml/2021/11/docker-3-container-data-volume/">
+                          Docker (3) Container data volume
                         </a>
                         <span class="archive-post-date"> - 
-  十月 28, 2021
+  November 1, 2021
 </span>
                       </li>
                     
@@ -379,7 +458,7 @@
                           Error - Could not initialize random number generator
                         </a>
                         <span class="archive-post-date"> - 
-  十月 28, 2021
+  October 28, 2021
 </span>
                       </li>
                     
@@ -399,7 +478,7 @@
                           Error - Could not initialize random number generator
                         </a>
                         <span class="archive-post-date"> - 
-  十月 28, 2021
+  October 28, 2021
 </span>
                       </li>
                     
@@ -419,7 +498,7 @@
                           Maven installation and configuration details
                         </a>
                         <span class="archive-post-date"> - 
-  十月 28, 2021
+  October 28, 2021
 </span>
                       </li>
                     
@@ -439,7 +518,27 @@
                           Welcome to Pluto&#39;s blog
                         </a>
                         <span class="archive-post-date"> - 
-  十月 26, 2021
+  October 26, 2021
+</span>
+                      </li>
+                    
+                  </ul>
+                </div>
+              
+                <div id="persistence-list" class="archive box" data-tag="persistence">
+                  <h4 class="archive-title">
+                    <a class="link-unstyled" href="persistence">
+                      persistence (1)
+                    </a>
+                  </h4>
+                  <ul class="archive-posts">
+                    
+                      <li class="archive-post">
+                        <a class="archive-post-title" href="https://www.plutoblog.ml/2021/11/docker-3-container-data-volume/">
+                          Docker (3) Container data volume
+                        </a>
+                        <span class="archive-post-date"> - 
+  November 1, 2021
 </span>
                       </li>
                     
@@ -459,7 +558,7 @@
                           Maven installation and configuration details
                         </a>
                         <span class="archive-post-date"> - 
-  十月 28, 2021
+  October 28, 2021
 </span>
                       </li>
                     
@@ -479,7 +578,7 @@
                           Error - Could not initialize random number generator
                         </a>
                         <span class="archive-post-date"> - 
-  十月 28, 2021
+  October 28, 2021
 </span>
                       </li>
                     
@@ -499,27 +598,27 @@
                           Maven installation and configuration details
                         </a>
                         <span class="archive-post-date"> - 
-  十月 28, 2021
+  October 28, 2021
 </span>
                       </li>
                     
                   </ul>
                 </div>
               
-                <div id="virtualization-list" class="archive box" data-tag="virtualization">
+                <div id="usage-list" class="archive box" data-tag="usage">
                   <h4 class="archive-title">
-                    <a class="link-unstyled" href="virtualization">
-                      virtualization (1)
+                    <a class="link-unstyled" href="usage">
+                      usage (1)
                     </a>
                   </h4>
                   <ul class="archive-posts">
                     
                       <li class="archive-post">
-                        <a class="archive-post-title" href="https://www.plutoblog.ml/2021/10/docker-1-installation/">
-                          Docker (1) installation
+                        <a class="archive-post-title" href="https://www.plutoblog.ml/2021/10/docker-2-basic-usage/">
+                          Docker (2) Basic Usage
                         </a>
                         <span class="archive-post-date"> - 
-  十月 28, 2021
+  October 31, 2021
 </span>
                       </li>
                     
@@ -542,7 +641,7 @@
       <i class="fa fa-times"></i>
     </div>
     
-      <img id="about-card-picture" src="https://gitee.com/mciusos/picbed/raw/master/blog/image-20211026094612469.png" alt="作者的图片" />
+      <img id="about-card-picture" src="https://gitee.com/mciusos/picbed/raw/master/blog/image-20211026094612469.png" alt="Author&#39;s picture" />
     
     <h4 id="about-card-name">Pluto</h4>
     

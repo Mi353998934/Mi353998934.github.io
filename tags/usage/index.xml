@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Usage on pluto&#39;s blog</title>
+    <link>https://www.plutoblog.ml/tags/usage/</link>
+    <description>Recent content in Usage on pluto&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 31 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.plutoblog.ml/tags/usage/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker (2) Basic Usage</title>
+      <link>https://www.plutoblog.ml/2021/10/docker-2-basic-usage/</link>
+      <pubDate>Sun, 31 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.plutoblog.ml/2021/10/docker-2-basic-usage/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Developers Love Docker.&lt;/strong&gt; 
+&lt;strong&gt;Businesses Trust It.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
