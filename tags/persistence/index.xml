@@ -6,13 +6,13 @@
     <description>Recent content in persistence on pluto&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.plutoblog.ml/tags/persistence/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.plutoblog.ml/tags/persistence/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker (3) Container data volume</title>
-      <link>https://www.plutoblog.ml/2021/11/docker-3-container-data-volume/</link>
-      <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
+      <link>https://www.plutoblog.ml/2021/10/docker-3-container-data-volume/</link>
+      <pubDate>Mon, 25 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.plutoblog.ml/2021/11/docker-3-container-data-volume/</guid>
+      <guid>https://www.plutoblog.ml/2021/10/docker-3-container-data-volume/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Developers Love Docker.&lt;/strong&gt; 
 &lt;strong&gt;Businesses Trust It.&lt;/strong&gt;&lt;/p&gt;</description>
     </item>

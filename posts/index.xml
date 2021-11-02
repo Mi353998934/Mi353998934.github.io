@@ -6,13 +6,63 @@
     <description>Recent content in Posts on pluto&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.plutoblog.ml/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.plutoblog.ml/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker (8) CI/CD</title>
+      <link>https://www.plutoblog.ml/2021/10/docker-8-ci/cd/</link>
+      <pubDate>Sat, 30 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.plutoblog.ml/2021/10/docker-8-ci/cd/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Developers Love Docker.&lt;/strong&gt; 
+&lt;strong&gt;Businesses Trust It.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Docker (7) Docker Swarm</title>
+      <link>https://www.plutoblog.ml/2021/10/docker-7-docker-swarm/</link>
+      <pubDate>Fri, 29 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.plutoblog.ml/2021/10/docker-7-docker-swarm/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Developers Love Docker.&lt;/strong&gt; 
+&lt;strong&gt;Businesses Trust It.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Docker (6) Docker Compose</title>
+      <link>https://www.plutoblog.ml/2021/10/docker-6-docker-compose/</link>
+      <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.plutoblog.ml/2021/10/docker-6-docker-compose/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Developers Love Docker.&lt;/strong&gt; 
+&lt;strong&gt;Businesses Trust It.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Docker (5) Docker network</title>
+      <link>https://www.plutoblog.ml/2021/10/docker-5-docker-network/</link>
+      <pubDate>Wed, 27 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.plutoblog.ml/2021/10/docker-5-docker-network/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Developers Love Docker.&lt;/strong&gt; 
+&lt;strong&gt;Businesses Trust It.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Docker (4) Dockerfile </title>
+      <link>https://www.plutoblog.ml/2021/10/docker-4-dockerfile/</link>
+      <pubDate>Tue, 26 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.plutoblog.ml/2021/10/docker-4-dockerfile/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Developers Love Docker.&lt;/strong&gt; 
+&lt;strong&gt;Businesses Trust It.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Docker (3) Container data volume</title>
-      <link>https://www.plutoblog.ml/2021/11/docker-3-container-data-volume/</link>
-      <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
+      <link>https://www.plutoblog.ml/2021/10/docker-3-container-data-volume/</link>
+      <pubDate>Mon, 25 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.plutoblog.ml/2021/11/docker-3-container-data-volume/</guid>
+      <guid>https://www.plutoblog.ml/2021/10/docker-3-container-data-volume/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Developers Love Docker.&lt;/strong&gt; 
 &lt;strong&gt;Businesses Trust It.&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
@@ -20,7 +70,7 @@
     <item>
       <title>Docker (2) Basic Usage</title>
       <link>https://www.plutoblog.ml/2021/10/docker-2-basic-usage/</link>
-      <pubDate>Sun, 31 Oct 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 24 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.plutoblog.ml/2021/10/docker-2-basic-usage/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Developers Love Docker.&lt;/strong&gt; 
@@ -30,7 +80,7 @@
     <item>
       <title>Docker (1) installation</title>
       <link>https://www.plutoblog.ml/2021/10/docker-1-installation/</link>
-      <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 23 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.plutoblog.ml/2021/10/docker-1-installation/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Developers Love Docker.&lt;/strong&gt; 
@@ -40,7 +90,7 @@
     <item>
       <title>Error - Could not initialize random number generator</title>
       <link>https://www.plutoblog.ml/2021/10/error-could-not-initialize-random-number-generator/</link>
-      <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 22 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.plutoblog.ml/2021/10/error-could-not-initialize-random-number-generator/</guid>
       <description></description>
@@ -49,7 +99,7 @@
     <item>
       <title>Maven installation and configuration details</title>
       <link>https://www.plutoblog.ml/2021/10/maven-installation-and-configuration-details/</link>
-      <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 21 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.plutoblog.ml/2021/10/maven-installation-and-configuration-details/</guid>
       <description>&lt;p&gt;Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project&amp;rsquo;s build, reporting and documentation from a central piece of information.&lt;/p&gt;</description>
@@ -58,7 +108,7 @@
     <item>
       <title>Welcome to Pluto&#39;s blog</title>
       <link>https://www.plutoblog.ml/2021/10/welcome-to-plutos-blog/</link>
-      <pubDate>Tue, 26 Oct 2021 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 20 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.plutoblog.ml/2021/10/welcome-to-plutos-blog/</guid>
       <description>&lt;p&gt;Welcome to my blog.&lt;/p&gt;

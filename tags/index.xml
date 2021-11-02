@@ -6,29 +6,65 @@
     <description>Recent content in Tags on pluto&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.plutoblog.ml/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>data volume</title>
-      <link>https://www.plutoblog.ml/tags/data-volume/</link>
-      <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.plutoblog.ml/tags/data-volume/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Sat, 30 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.plutoblog.ml/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker</title>
       <link>https://www.plutoblog.ml/tags/docker/</link>
-      <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 30 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.plutoblog.ml/tags/docker/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Swarm</title>
+      <link>https://www.plutoblog.ml/tags/swarm/</link>
+      <pubDate>Fri, 29 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.plutoblog.ml/tags/swarm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Compose</title>
+      <link>https://www.plutoblog.ml/tags/compose/</link>
+      <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.plutoblog.ml/tags/compose/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>network</title>
+      <link>https://www.plutoblog.ml/tags/network/</link>
+      <pubDate>Wed, 27 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.plutoblog.ml/tags/network/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dockerfile</title>
+      <link>https://www.plutoblog.ml/tags/dockerfile/</link>
+      <pubDate>Tue, 26 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.plutoblog.ml/tags/dockerfile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data volume</title>
+      <link>https://www.plutoblog.ml/tags/data-volume/</link>
+      <pubDate>Mon, 25 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.plutoblog.ml/tags/data-volume/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>persistence</title>
       <link>https://www.plutoblog.ml/tags/persistence/</link>
-      <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 25 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.plutoblog.ml/tags/persistence/</guid>
       <description></description>
@@ -37,7 +73,7 @@
     <item>
       <title>Usage</title>
       <link>https://www.plutoblog.ml/tags/usage/</link>
-      <pubDate>Sun, 31 Oct 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 24 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.plutoblog.ml/tags/usage/</guid>
       <description></description>
@@ -46,61 +82,70 @@
     <item>
       <title>virtualization</title>
       <link>https://www.plutoblog.ml/tags/virtualization/</link>
-      <pubDate>Sun, 31 Oct 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 24 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.plutoblog.ml/tags/virtualization/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>apache</title>
-      <link>https://www.plutoblog.ml/tags/apache/</link>
-      <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.plutoblog.ml/tags/apache/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>configuration</title>
-      <link>https://www.plutoblog.ml/tags/configuration/</link>
-      <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.plutoblog.ml/tags/configuration/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Error</title>
-      <link>https://www.plutoblog.ml/tags/error/</link>
-      <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.plutoblog.ml/tags/error/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>installation</title>
       <link>https://www.plutoblog.ml/tags/installation/</link>
-      <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 23 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.plutoblog.ml/tags/installation/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>apache</title>
+      <link>https://www.plutoblog.ml/tags/apache/</link>
+      <pubDate>Fri, 22 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.plutoblog.ml/tags/apache/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Error</title>
+      <link>https://www.plutoblog.ml/tags/error/</link>
+      <pubDate>Fri, 22 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.plutoblog.ml/tags/error/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>kernel</title>
       <link>https://www.plutoblog.ml/tags/kernel/</link>
-      <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 22 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.plutoblog.ml/tags/kernel/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>tomcat</title>
+      <link>https://www.plutoblog.ml/tags/tomcat/</link>
+      <pubDate>Fri, 22 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.plutoblog.ml/tags/tomcat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>configuration</title>
+      <link>https://www.plutoblog.ml/tags/configuration/</link>
+      <pubDate>Thu, 21 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.plutoblog.ml/tags/configuration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>maven</title>
       <link>https://www.plutoblog.ml/tags/maven/</link>
-      <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 21 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.plutoblog.ml/tags/maven/</guid>
       <description></description>
@@ -109,25 +154,16 @@
     <item>
       <title>POM</title>
       <link>https://www.plutoblog.ml/tags/pom/</link>
-      <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 21 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.plutoblog.ml/tags/pom/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>tomcat</title>
-      <link>https://www.plutoblog.ml/tags/tomcat/</link>
-      <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.plutoblog.ml/tags/tomcat/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>tool</title>
       <link>https://www.plutoblog.ml/tags/tool/</link>
-      <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 21 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.plutoblog.ml/tags/tool/</guid>
       <description></description>
@@ -136,7 +172,7 @@
     <item>
       <title>blog</title>
       <link>https://www.plutoblog.ml/tags/blog/</link>
-      <pubDate>Tue, 26 Oct 2021 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 20 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.plutoblog.ml/tags/blog/</guid>
       <description></description>
@@ -145,9 +181,18 @@
     <item>
       <title>normal</title>
       <link>https://www.plutoblog.ml/tags/normal/</link>
-      <pubDate>Tue, 26 Oct 2021 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 20 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.plutoblog.ml/tags/normal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CI/CD</title>
+      <link>https://www.plutoblog.ml/tags/ci/cd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.plutoblog.ml/tags/ci/cd/</guid>
       <description></description>
     </item>
     

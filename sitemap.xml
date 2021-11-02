@@ -3,98 +3,127 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.plutoblog.ml/categories/</loc>
-    <lastmod>2021-11-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.plutoblog.ml/tags/data-volume/</loc>
-    <lastmod>2021-11-01T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.plutoblog.ml/tags/docker/</loc>
-    <lastmod>2021-11-01T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.plutoblog.ml/categories/docker/</loc>
-    <lastmod>2021-11-01T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.plutoblog.ml/2021/11/docker-3-container-data-volume/</loc>
-    <lastmod>2021-11-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.plutoblog.ml/tags/persistence/</loc>
-    <lastmod>2021-11-01T00:00:00+00:00</lastmod>
+    <loc>https://www.plutoblog.ml/2021/10/docker-8-ci/cd/</loc>
+    <lastmod>2021-10-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.plutoblog.ml/</loc>
-    <lastmod>2021-11-01T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.plutoblog.ml/posts/</loc>
-    <lastmod>2021-11-01T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.plutoblog.ml/tags/</loc>
-    <lastmod>2021-11-01T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.plutoblog.ml/categories/virtualization/</loc>
-    <lastmod>2021-11-01T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.plutoblog.ml/2021/10/docker-7-docker-swarm/</loc>
+    <lastmod>2021-10-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.plutoblog.ml/tags/swarm/</loc>
+    <lastmod>2021-10-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.plutoblog.ml/tags/compose/</loc>
+    <lastmod>2021-10-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.plutoblog.ml/2021/10/docker-6-docker-compose/</loc>
+    <lastmod>2021-10-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.plutoblog.ml/2021/10/docker-5-docker-network/</loc>
+    <lastmod>2021-10-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.plutoblog.ml/tags/network/</loc>
+    <lastmod>2021-10-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.plutoblog.ml/2021/10/docker-4-dockerfile/</loc>
+    <lastmod>2021-10-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.plutoblog.ml/tags/dockerfile/</loc>
+    <lastmod>2021-10-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.plutoblog.ml/tags/data-volume/</loc>
+    <lastmod>2021-10-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.plutoblog.ml/2021/10/docker-3-container-data-volume/</loc>
+    <lastmod>2021-10-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.plutoblog.ml/tags/persistence/</loc>
+    <lastmod>2021-10-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.plutoblog.ml/2021/10/docker-2-basic-usage/</loc>
-    <lastmod>2021-10-31T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.plutoblog.ml/tags/usage/</loc>
-    <lastmod>2021-10-31T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.plutoblog.ml/tags/virtualization/</loc>
-    <lastmod>2021-10-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.plutoblog.ml/tags/apache/</loc>
-    <lastmod>2021-10-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.plutoblog.ml/tags/configuration/</loc>
-    <lastmod>2021-10-28T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.plutoblog.ml/2021/10/docker-1-installation/</loc>
-    <lastmod>2021-10-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.plutoblog.ml/tags/error/</loc>
-    <lastmod>2021-10-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.plutoblog.ml/categories/error/</loc>
-    <lastmod>2021-10-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.plutoblog.ml/2021/10/error-could-not-initialize-random-number-generator/</loc>
-    <lastmod>2021-10-28T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.plutoblog.ml/tags/installation/</loc>
-    <lastmod>2021-10-28T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.plutoblog.ml/tags/apache/</loc>
+    <lastmod>2021-10-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.plutoblog.ml/tags/error/</loc>
+    <lastmod>2021-10-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.plutoblog.ml/categories/error/</loc>
+    <lastmod>2021-10-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.plutoblog.ml/2021/10/error-could-not-initialize-random-number-generator/</loc>
+    <lastmod>2021-10-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.plutoblog.ml/tags/kernel/</loc>
-    <lastmod>2021-10-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.plutoblog.ml/tags/maven/</loc>
-    <lastmod>2021-10-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.plutoblog.ml/categories/maven/</loc>
-    <lastmod>2021-10-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.plutoblog.ml/2021/10/maven-installation-and-configuration-details/</loc>
-    <lastmod>2021-10-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.plutoblog.ml/tags/pom/</loc>
-    <lastmod>2021-10-28T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.plutoblog.ml/tags/tomcat/</loc>
-    <lastmod>2021-10-28T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.plutoblog.ml/tags/configuration/</loc>
+    <lastmod>2021-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.plutoblog.ml/tags/maven/</loc>
+    <lastmod>2021-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.plutoblog.ml/categories/maven/</loc>
+    <lastmod>2021-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.plutoblog.ml/2021/10/maven-installation-and-configuration-details/</loc>
+    <lastmod>2021-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.plutoblog.ml/tags/pom/</loc>
+    <lastmod>2021-10-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.plutoblog.ml/tags/tool/</loc>
-    <lastmod>2021-10-28T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.plutoblog.ml/tags/blog/</loc>
-    <lastmod>2021-10-26T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.plutoblog.ml/categories/blog/</loc>
-    <lastmod>2021-10-26T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.plutoblog.ml/tags/normal/</loc>
-    <lastmod>2021-10-26T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.plutoblog.ml/2021/10/welcome-to-plutos-blog/</loc>
-    <lastmod>2021-10-26T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.plutoblog.ml/archives/</loc>
+  </url><url>
+    <loc>https://www.plutoblog.ml/tags/ci/cd/</loc>
   </url>
 </urlset>
