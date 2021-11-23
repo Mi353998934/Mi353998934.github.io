@@ -284,10 +284,486 @@ Businesses Trust It.">
 <strong>Businesses Trust It.</strong></p>
 <p>Build safer, share wider, run faster: New updates to our product subscriptions.</p>
 <h1 id="table-of-contents">Table of Contents</h1>
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#networking-overview">Networking overview</a>
+      <ul>
+        <li><a href="#network-drivers">Network drivers</a></li>
+        <li><a href="#network-driver-summary">Network driver summary</a></li>
+      </ul>
+    </li>
+    <li><a href="#use-bridge-networks">Use bridge networks</a>
+      <ul>
+        <li><a href="#differences-between-user-defined-bridges-and-the-default-bridge">Differences between user-defined bridges and the default bridge</a></li>
+        <li><a href="#manage-a-user-defined-bridge">Manage a user-defined bridge</a></li>
+        <li><a href="#connect-a-container-to-a-user-defined-bridge">Connect a container to a user-defined bridge</a></li>
+        <li><a href="#disconnect-a-container-from-a-user-defined-bridge">Disconnect a container from a user-defined bridge</a></li>
+        <li><a href="#use-ipv6">Use IPv6</a></li>
+        <li><a href="#enable-forwarding-from-docker-containers-to-the-outside-world">Enable forwarding from Docker containers to the outside world</a></li>
+        <li><a href="#use-the-default-bridge-network">Use the default bridge network</a></li>
+      </ul>
+    </li>
+    <li><a href="#instance">Instance</a>
+      <ul>
+        <li><a href="#redis-cluster">Redis cluster</a></li>
+      </ul>
+    </li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
 
-<hr>
-<p>To be continued</p>
+<h1 id="networking-overview">Networking overview</h1>
+<p>One of the reasons Docker containers and services are so powerful is that you can connect them together, or connect them to non-Docker workloads. Docker containers and services do not even need to be aware that they are deployed on Docker, or whether their peers are also Docker workloads or not. Whether your Docker hosts run Linux, Windows, or a mix of the two, you can use Docker to manage them in a platform-agnostic way.</p>
+<h2 id="network-drivers">Network drivers</h2>
+<p>Docker’s networking subsystem is pluggable, using drivers. Several drivers exist by default, and provide core networking functionality:</p>
+<ul>
+<li>bridge</li>
+<li>host</li>
+<li>overlay</li>
+<li>ipvlan</li>
+<li>macvlan</li>
+<li>none</li>
+<li><a href="https://docs.docker.com/engine/extend/plugins_services/">Network plugins</a></li>
+</ul>
+<h2 id="network-driver-summary">Network driver summary</h2>
+<ul>
+<li><strong>User-defined bridge networks</strong> are best when you need multiple containers to communicate on the same Docker host.</li>
+<li><strong>Host networks</strong> are best when the network stack should not be isolated from the Docker host, but you want other aspects of the container to be isolated.</li>
+<li><strong>Overlay networks</strong> are best when you need containers running on different Docker hosts to communicate, or when multiple applications work together using swarm services.</li>
+<li><strong>Macvlan networks</strong> are best when you are migrating from a VM setup or need your containers to look like physical hosts on your network, each with a unique MAC address.</li>
+<li><strong>Third-party network plugins</strong> allow you to integrate Docker with specialized network stacks.</li>
+</ul>
+<h1 id="use-bridge-networks">Use bridge networks</h1>
+<p>In terms of networking, a bridge network is a Link Layer device which forwards traffic between network segments. A bridge can be a hardware device or a software device running within a host machine’s kernel.</p>
+<p>In terms of Docker, a bridge network uses a software bridge which allows containers connected to the same bridge network to communicate, while providing isolation from containers which are not connected to that bridge network. The Docker bridge driver automatically installs rules in the host machine so that containers on different bridge networks cannot communicate directly with each other.</p>
+<h2 id="differences-between-user-defined-bridges-and-the-default-bridge">Differences between user-defined bridges and the default bridge</h2>
+<ul>
+<li><strong>User-defined bridges provide automatic DNS resolution between containers</strong>.</li>
+<li><strong>User-defined bridges provide better isolation</strong>.</li>
+<li><strong>Containers can be attached and detached from user-defined networks on the fly</strong>.</li>
+<li><strong>Each user-defined network creates a configurable bridge</strong>.</li>
+<li><strong>Linked containers on the default bridge network share environment variables</strong>.</li>
+</ul>
+<h2 id="manage-a-user-defined-bridge">Manage a user-defined bridge</h2>
+<p>create a user-defined bridge network</p>
+
+  
+    
+  
+  
+  
+  
+
+
+<figure class="highlight  language-">
+  <figcaption>
+    
+      <span>docker network create</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language- "><code class="">docker network create my-net</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+
+<p>remove a user-defined bridge network.</p>
+
+  
+    
+  
+  
+  
+  
+
+
+<figure class="highlight  language-">
+  <figcaption>
+    
+      <span>docker network rm</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language- "><code class="">docker network rm my-net</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+
+<h2 id="connect-a-container-to-a-user-defined-bridge">Connect a container to a user-defined bridge</h2>
+<p>This example connects a Nginx container to the network.</p>
+
+  
+    
+  
+  
+  
+  
+
+
+<figure class="highlight  language-">
+  <figcaption>
+    
+      <span>docker create</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language- "><code class="">docker create --name my-nginx \
+  --network my-net \
+  --publish 8080:80 \
+  nginx:latest</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+
+<p>Connecting a <strong>running</strong> container to an existing user-defined bridge.</p>
+
+  
+    
+  
+  
+  
+  
+
+
+<figure class="highlight  language-">
+  <figcaption>
+    
+      <span>docker network connect</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language- "><code class="">docker network connect my-net my-nginx</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+
+<h2 id="disconnect-a-container-from-a-user-defined-bridge">Disconnect a container from a user-defined bridge</h2>
+<p>Disconnecting a running container from a user-defined bridge</p>
+
+  
+    
+  
+  
+  
+  
+
+
+<figure class="highlight  language-">
+  <figcaption>
+    
+      <span>docker network disconnect</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language- "><code class="">docker network disconnect my-net my-nginx</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+
+<h2 id="use-ipv6">Use IPv6</h2>
+<p>If you need IPv6 support for Docker containers, you need to <a href="https://docs.docker.com/config/daemon/ipv6/">enable the option</a> on the Docker daemon and reload its configuration, before creating any IPv6 networks or assigning containers IPv6 addresses.</p>
+<p>When you create your network, you can specify the flag to enable IPv6. You can’t selectively disable IPv6 support on the default network.<code>--ipv6</code> <code>bridge</code></p>
+<h2 id="enable-forwarding-from-docker-containers-to-the-outside-world">Enable forwarding from Docker containers to the outside world</h2>
+<ol>
+<li>
+<p>Configure the Linux kernel to allow IP forwarding.</p>
+
+  
+    
+  
+  
+  
+  
+
+
+<figure class="highlight  language-">
+  <figcaption>
+    
+      <span>sysctl</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language- "><code class="">sysctl net.ipv4.conf.all.forwarding=1</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+
+</li>
+<li>
+<p>Change the policy for the policy from to .</p>
+
+  
+    
+  
+  
+  
+  
+
+
+<figure class="highlight  language-">
+  <figcaption>
+    
+      <span>iptables</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language- "><code class="">sudo iptables -P FORWARD ACCEPT</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+
+</li>
+</ol>
+<blockquote>
+<p>These settings do not persist across a reboot, so you may need to add them to a start-up script.</p>
+</blockquote>
+<h2 id="use-the-default-bridge-network">Use the default bridge network</h2>
+<p><strong>For details, please refer to the official documentation.</strong></p>
+<h1 id="instance">Instance</h1>
+<h2 id="redis-cluster">Redis cluster</h2>
+<ol>
+<li>
+<p>Create a user-defined bridge network</p>
+
+  
+    
+  
+  
+  
+  
+
+
+<figure class="highlight  language-">
+  <figcaption>
+    
+      <span>docker network</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language- "><code class="">docker network create redis --subnet 172.38.0.0/16</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+
+</li>
+<li>
+<p>Create six Redis configurations from the script</p>
+
+  
+    
+  
+  
+  
+  
+
+
+<figure class="highlight  language-">
+  <figcaption>
+    
+      <span>shell</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language- "><code class="">
+   for port in $(seq 1 6); \
+   do \
+   mkdir -p /mydata/redis/node-${port}/conf
+   touch /mydata/redis/node-${port}/conf/redis.conf
+   cat &lt;&lt; EOF &gt;/mydata/redis/node-${port}/conf/redis.conf
+   port 6379
+   bind 0.0.0.0
+   cluster-enabled yes
+   cluster-config-file nodes.conf
+   cluster-node-timeout 5000
+   cluster-announce-ip 172.38.0.1${port}
+   cluster-announce-port 6379
+   cluster-announce-bus-port 16379
+   appendonly yes
+   EOF
+   done</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+
+</li>
+<li>
+<p>Start the redis</p>
+
+  
+    
+  
+  
+  
+  
+
+
+<figure class="highlight  language-">
+  <figcaption>
+    
+      <span>docker run</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language- "><code class="">   #redis-1
+   docker run -p 6371:6379 -p 16371:16379 --name redis-1 \
+   -v /mydata/redis/node-1/data:/data \
+   -v /mydata/redis/node-1/conf/redis.conf:/etc/redis/redis.conf \
+   -d --net redis --ip 172.38.0.11 redis:5.0.9-alpine3.11 redis-server /etc/redis/redis.conf
+   
+   #redis-2
+   docker run -p 6372:6379 -p 16372:16379 --name redis-2 \
+   -v /mydata/redis/node-2/data:/data \
+   -v /mydata/redis/node-2/conf/redis.conf:/etc/redis/redis.conf \
+   -d --net redis --ip 172.38.0.12 redis:5.0.9-alpine3.11 redis-server /etc/redis/redis.conf
+   
+   #redis-3
+   docker run -p 6373:6379 -p 16373:16379 --name redis-3 \
+   -v /mydata/redis/node-3/data:/data \
+   -v /mydata/redis/node-3/conf/redis.conf:/etc/redis/redis.conf \
+   -d --net redis --ip 172.38.0.13 redis:5.0.9-alpine3.11 redis-server /etc/redis/redis.conf
+   
+   #redis-4
+   docker run -p 6374:6379 -p 16374:16379 --name redis-4 \
+   -v /mydata/redis/node-4/data:/data \
+   -v /mydata/redis/node-4/conf/redis.conf:/etc/redis/redis.conf \
+   -d --net redis --ip 172.38.0.14 redis:5.0.9-alpine3.11 redis-server /etc/redis/redis.conf
+   
+   
+   #redis-5
+   docker run -p 6375:6379 -p 16375:16379 --name redis-5 \
+   -v /mydata/redis/node-5/data:/data \
+   -v /mydata/redis/node-5/conf/redis.conf:/etc/redis/redis.conf \
+   -d --net redis --ip 172.38.0.15 redis:5.0.9-alpine3.11 redis-server /etc/redis/redis.conf
+   
+   
+   #redis-6
+   docker run -p 6376:6379 -p 16376:16379 --name redis-6 \
+   -v /mydata/redis/node-6/data:/data \
+   -v /mydata/redis/node-6/conf/redis.conf:/etc/redis/redis.conf \
+   -d --net redis --ip 172.38.0.16 redis:5.0.9-alpine3.11 redis-server /etc/redis/redis.conf</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+
+</li>
+<li>
+<p>Create the cluster</p>
+
+  
+    
+  
+  
+  
+  
+
+
+<figure class="highlight  language-">
+  <figcaption>
+    
+      <span>redis-cli</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language- "><code class="">   redis-cli --cluster create 172.38.0.11:6379 172.38.0.12:6379 172.38.0.13:6379 172.38.0.14:6379 172.38.0.15:6379 172.38.0.16:6379 --cluster-replicas 1</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+
+</li>
+</ol>
+<h1 id="references">References</h1>
+<blockquote>
+<p>Networking overview | Docker Documentation</p>
+</blockquote>
+<p><a href="https://docs.docker.com/network/">https://docs.docker.com/network/</a></p>
               
 
 
