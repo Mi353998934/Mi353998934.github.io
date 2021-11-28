@@ -2,10 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.plutoblog.ml/tags/apache/</loc>
-    <lastmod>2021-11-15T00:00:00+00:00</lastmod>
+    <loc>https://www.plutoblog.ml/tags/algorithm/</loc>
+    <lastmod>2021-11-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.plutoblog.ml/categories/algorithm/</loc>
+    <lastmod>2021-11-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.plutoblog.ml/2021/11/algorithm-clustering-algorithms-k-means/</loc>
+    <lastmod>2021-11-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.plutoblog.ml/categories/</loc>
+    <lastmod>2021-11-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.plutoblog.ml/tags/clustering-algorithms/</loc>
+    <lastmod>2021-11-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.plutoblog.ml/tags/k-means/</loc>
+    <lastmod>2021-11-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.plutoblog.ml/</loc>
+    <lastmod>2021-11-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.plutoblog.ml/posts/</loc>
+    <lastmod>2021-11-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.plutoblog.ml/tags/</loc>
+    <lastmod>2021-11-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.plutoblog.ml/tags/apache/</loc>
     <lastmod>2021-11-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.plutoblog.ml/tags/error/</loc>
@@ -15,15 +39,6 @@
     <lastmod>2021-11-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.plutoblog.ml/2021/11/error-multiple-contexts-have-a-path-of-/xxx/</loc>
-    <lastmod>2021-11-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.plutoblog.ml/</loc>
-    <lastmod>2021-11-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.plutoblog.ml/posts/</loc>
-    <lastmod>2021-11-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.plutoblog.ml/tags/</loc>
     <lastmod>2021-11-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.plutoblog.ml/tags/tomcat/</loc>

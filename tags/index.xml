@@ -6,7 +6,34 @@
     <description>Recent content in Tags on pluto&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 15 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.plutoblog.ml/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 27 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.plutoblog.ml/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algorithm</title>
+      <link>https://www.plutoblog.ml/tags/algorithm/</link>
+      <pubDate>Sat, 27 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.plutoblog.ml/tags/algorithm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Clustering Algorithms</title>
+      <link>https://www.plutoblog.ml/tags/clustering-algorithms/</link>
+      <pubDate>Sat, 27 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.plutoblog.ml/tags/clustering-algorithms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>K-means</title>
+      <link>https://www.plutoblog.ml/tags/k-means/</link>
+      <pubDate>Sat, 27 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.plutoblog.ml/tags/k-means/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>apache</title>
       <link>https://www.plutoblog.ml/tags/apache/</link>
