@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <script type="application/ld+json">
+
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Intranet penetration - frp",
+  
+  "image": "//d1u9biwaxjngwg.cloudfront.net/welcome-to-tranquilpeak/city.jpg",
+  
+  "datePublished": "2021-11-25T00:00:00Z",
+  "dateModified": "2021-11-25T00:00:00Z",
+  "author": {
+    "@type": "Person",
+    "name": "Pluto",
+    
+    "image": "https://gitee.com/mciusos/picbed/raw/master/blog/image-20211026094612469.png"
+    
+  },
+  "mainEntityOfPage": { 
+    "@type": "WebPage",
+    "@id": "https:\/\/www.plutoblog.ml\/2021\/11\/intranet-penetration-frp\/" 
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "pluto's blog",
+    
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://gitee.com/mciusos/picbed/raw/master/blog/image-20211026094612469.png"
+    }
+    
+  },
+  "description": "Convenient and quick!\n",
+  "keywords": ["Intranet penetration, frp", "Java, Technology"]
+}
+
+</script>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.88.1 with theme Tranquilpeak 0.5.3-BETA">
+<meta name="author" content="Pluto">
+<meta name="keywords" content="Intranet penetration, frp, Java, Technology">
+<meta name="description" content="Convenient and quick!">
+
+
+<meta property="og:description" content="Convenient and quick!">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Intranet penetration - frp">
+<meta name="twitter:title" content="Intranet penetration - frp">
+<meta property="og:url" content="https://www.plutoblog.ml/2021/11/intranet-penetration-frp/">
+<meta property="twitter:url" content="https://www.plutoblog.ml/2021/11/intranet-penetration-frp/">
+<meta property="og:site_name" content="pluto&#39;s blog">
+<meta property="og:description" content="Convenient and quick!">
+<meta name="twitter:description" content="Convenient and quick!">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2021-11-25T00:00:00">
+  
+  
+    <meta property="article:modified_time" content="2021-11-25T00:00:00">
+  
+  
+  
+    
+      <meta property="article:section" content="Intranet penetration">
+    
+  
+  
+    
+      <meta property="article:tag" content="Intranet penetration">
+    
+      <meta property="article:tag" content="frp">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://gitee.com/mciusos/picbed/raw/master/blog/image-20211026094612469.png">
+  <meta property="twitter:image" content="https://gitee.com/mciusos/picbed/raw/master/blog/image-20211026094612469.png">
+
+
+
+
+  <meta property="og:image" content="//d1u9biwaxjngwg.cloudfront.net/welcome-to-tranquilpeak/city.jpg">
+  <meta property="twitter:image" content="//d1u9biwaxjngwg.cloudfront.net/welcome-to-tranquilpeak/city.jpg">
+
+
+  <meta property="og:image" content="https://gitee.com/mciusos/picbed/raw/master/blog/Moby-run.png">
+  <meta property="twitter:image" content="https://gitee.com/mciusos/picbed/raw/master/blog/Moby-run.png">
+
+
+    <title>Intranet penetration - frp</title>
+
+    <link rel="icon" href="https://www.plutoblog.ml/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://www.plutoblog.ml/2021/11/intranet-penetration-frp/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    
+    <link rel="stylesheet" href="https://www.plutoblog.ml/css/style-h6ccsoet3mzkbb0wngshlfbaweimexgqcxj0h5hu4h82olsdzz6wmqdkajm.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="5">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://www.plutoblog.ml/" aria-label="Go to homepage">pluto&#39;s blog</a>
+  </div>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="5">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://www.plutoblog.ml/#about" aria-label="Read more about the author">
+          <img class="sidebar-profile-picture" src="https://gitee.com/mciusos/picbed/raw/master/blog/image-20211026094612469.png" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">Pluto</h4>
+        
+          <h5 class="sidebar-profile-bio"><a href="mailto:353998934@qq.com">353998934@qq.com</a></h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.plutoblog.ml/" title="Home">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-home" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.plutoblog.ml/categories" title="Categories">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-bookmark" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.plutoblog.ml/tags" title="Tags">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-tags" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.plutoblog.ml/archives" title="Archives">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-archive" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.plutoblog.ml/#about" title="About">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-question" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.plutoblog.ml/index.xml" title="RSS">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-rss" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+  <div class="post-header-cover
+              text-center
+              "
+       style="background-image:url('//d1u9biwaxjngwg.cloudfront.net/welcome-to-tranquilpeak/city.jpg')"
+       data-behavior="5">
+    
+      <div class="post-header main-content-wrap text-center">
+  
+    <h1 class="post-title">
+      Intranet penetration - frp
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="2021-11-25T00:00:00Z">
+        
+  November 25, 2021
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://www.plutoblog.ml/categories/intranet-penetration">Intranet penetration</a>
+    
+  
+
+  </div>
+
+</div>
+    
+  </div>
+
+
+      <div id="main" data-behavior="5"
+        class="hasCover
+               hasCoverMetaIn
+               ">
+        <article class="post" id="top">
+          
+          
+          <div class="post-content markdown">
+            <div class="main-content-wrap">
+              <p>Convenient and quick!</p>
+<h1 id="table-of-contents">Table of Contents</h1>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#intranet-penetration">Intranet penetration</a></li>
+    <li><a href="#frp">frp</a>
+      <ul>
+        <li><a href="#what-is-frp">What is frp?</a></li>
+        <li><a href="#features">Features</a>
+          <ul>
+            <li><a href="#configuration-files">Configuration Files</a></li>
+            <li><a href="#using-environment-variables">Using Environment Variables</a></li>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#admin-ui">Admin UI</a></li>
+            <li><a href="#authenticating-the-client">Authenticating the Client</a></li>
+            <li><a href="#require-http-basic-auth-password-for-web-services">Require HTTP Basic Auth (Password) for Web Services</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#simple-example">simple example</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#environment">Environment:</a></li>
+            <li><a href="#on-the-server">On the server:</a></li>
+            <li><a href="#on-the-client">On the Client:</a></li>
+            <li><a href="#test">Test</a></li>
+            <li><a href="#expand---run-frp-with-docker">expand - Run FRP with Docker</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#reference">reference</a></li>
+  </ul>
+</nav>
+
+<h1 id="intranet-penetration">Intranet penetration</h1>
+<p>Intranet penetration, that is, NAT penetration. NAT penetration is to make the data packets with a specific source IP address and source port number not shielded by the NAT device and correctly routed to the intranet host. Next, the intranet penetration method is introduced with respect to the relative position between the host communicating with each other and the NAT device in the network.</p>
+<h1 id="frp">frp</h1>
+<h2 id="what-is-frp">What is frp?</h2>
+<p>frp is a fast reverse proxy to help you expose a local server behind a NAT or firewall to the Internet. As of now, it supports <strong>TCP</strong> and <strong>UDP</strong>, as well as <strong>HTTP</strong> and <strong>HTTPS</strong> protocols, where requests can be forwarded to internal services by domain name.</p>
+<p>frp also has a P2P connect mode.</p>
+<h2 id="features">Features</h2>
+<p>The FRP server can be deployed on nodes with public IP addresses to easily connect Intranet services to the public network and provide many professional functions and features, including:</p>
+<ul>
+<li>Client The server supports multiple protocols such as TCP, KCP, and Websocket.</li>
+<li>TCP connection multiplexing is used to load more requests between a single connection, saving connection establishment time.</li>
+<li>Load balancing between proxy groups.</li>
+<li>Port multiplexing. Multiple services are exposed through the same server port.</li>
+<li>Multiple natively supported client plug-ins (static file viewing, HTTP, SOCK5 proxy, etc.) to facilitate the independent use of FRP clients for certain tasks.</li>
+<li>Highly extensible server plug-in system, convenient for function expansion according to their own requirements.</li>
+<li>Server and client UI pages.</li>
+</ul>
+<h3 id="configuration-files">Configuration Files</h3>
+<p>Read the full example configuration files to find out even more features not described here.</p>
+<p><a href="https://github.com/fatedier/frp/blob/dev/conf/frps_full.ini">Full configuration file for frps (Server)</a></p>
+<p><a href="https://github.com/fatedier/frp/blob/dev/conf/frpc_full.ini">Full configuration file for frpc (Client)</a></p>
+<h3 id="using-environment-variables">Using Environment Variables</h3>
+<p>Environment variables can be referenced in the configuration file, using Go&rsquo;s standard format:</p>
+
+  
+    
+  
+  
+  
+  
+
+
+<figure class="highlight  language-">
+  <figcaption>
+    
+      <span>frpc.ini</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language- "><code class="">[common]
+server_addr = {{ .Envs.FRP_SERVER_ADDR }}
+server_port = 7000
+[ssh]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 22
+remote_port = {{ .Envs.FRP_SSH_REMOTE_PORT }}</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+
+<p>With the config above, variables can be passed into program like this:<code>frpc</code></p>
+
+  
+    
+  
+  
+  
+  
+
+
+<figure class="highlight  language-">
+  <figcaption>
+    
+      <span>frpc.ini</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language- "><code class="">export FRP_SERVER_ADDR=&#34;x.x.x.x&#34;
+export FRP_SSH_REMOTE_PORT=&#34;6000&#34;
+./frpc -c ./frpc.ini</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+
+<p><code>frpc</code> will render configuration file template using OS environment variables. Remember to prefix your reference with <strong><code>.Envs</code></strong></p>
+<h3 id="dashboard">Dashboard</h3>
+<p>Check frp&rsquo;s status and proxies' statistics information by Dashboard.</p>
+<p>Configure a port for dashboard to enable this feature:
+
+  
+    
+  
+  
+  
+  
+
+
+<figure class="highlight  language-">
+  <figcaption>
+    
+      <span>frps.ini</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language- "><code class="">[common]
+dashboard_port = 7500
+dashboard_user = admin
+dashboard_pwd = admin</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+</p>
+<p>Then visit to see the dashboard, with username and password both being admin <code>http://[server_addr]:7500</code></p>
+<h3 id="admin-ui">Admin UI</h3>
+<p>The Admin UI helps you check and manage frpc&rsquo;s configuration.</p>
+<p>Configure an address for admin UI to enable this feature:
+
+  
+    
+  
+  
+  
+  
+
+
+<figure class="highlight  language-">
+  <figcaption>
+    
+      <span>frps.ini</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language- "><code class="">[common]
+admin_addr = 127.0.0.1
+admin_port = 7400
+admin_user = admin
+admin_pwd = admin</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+</p>
+<p>Then visit to see admin UI, with username and password both being admin <code>http://127.0.0.1:7400</code></p>
+<h3 id="authenticating-the-client">Authenticating the Client</h3>
+<h4 id="token-authentication">Token Authentication</h4>
+<p>When specifying under in and - token based authentication will be used.<code>authentication_method = token [common] frpc.ini frps.ini</code></p>
+<p>Make sure to specify <strong>the same in</strong> the section in and for frpc to pass frps validation<code>token [common] frps.ini frpc.ini</code></p>
+<h4 id="oidc-authentication">OIDC Authentication</h4>
+<p>OIDC stands for OpenID Connect, and the flow used is called <a href="https://tools.ietf.org/html/rfc6749#section-4.4">Client Credentials Grant</a>.</p>
+<h3 id="require-http-basic-auth-password-for-web-services">Require HTTP Basic Auth (Password) for Web Services</h3>
+<p>Anyone who can guess your tunnel URL can access your local web server unless you protect it with a password.</p>
+<p>This enforces HTTP Basic Auth on all requests with the username and password specified in frpc&rsquo;s configure file.</p>
+<p>It can only be enabled when proxy type is http.
+
+  
+    
+  
+  
+  
+  
+
+
+<figure class="highlight  language-">
+  <figcaption>
+    
+      <span>frps.ini</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language- "><code class="">[web]
+type = http
+local_port = 80
+custom_domains = test.example.com
+http_user = abc
+http_pwd = abc</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+</p>
+<p>Visit in the browser and now you are prompted to enter the username and password.</p>
+<h1 id="simple-example">simple example</h1>
+<p>In this experiment, we use two virtual machines to simulate NAT penetration. The server network adapter uses <strong>bridge mode</strong> and the client network adapter uses <strong>NAT mode</strong>.</p>
+<h3 id="environment">Environment:</h3>
+<p>Download the FRP on the server and client respectively.</p>
+<p>Decompress the FRP compression package.</p>
+<h3 id="on-the-server">On the server:</h3>
+<h4 id="editing-frpsini-configuration-file">Editing frps.ini Configuration File:</h4>
+
+  
+    
+  
+  
+  
+  
+
+
+<figure class="highlight  language-">
+  <figcaption>
+    
+      <span>frps.ini</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language- "><code class="">[common]
+bind_port = 7000
+dashboard_port = 7500
+vhost_http_port = 8080
+vhost_https_port = 8443
+token = 123456
+dashboard_user = admin
+dashboard_pwd = admin</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+
+<h4 id="copy-file">Copy file</h4>
+
+  
+    
+  
+  
+  
+  
+
+
+<figure class="highlight  language-">
+  <figcaption>
+    
+      <span>frps.ini</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language- "><code class="">
+mkdir -p /etc/frp
+cp frps.ini /etc/frp
+cp frps /usr/bin
+cp systemd/frps.service /usr/lib/systemd/system/</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+
+<h4 id="start-the-service">Start the service</h4>
+
+  
+    
+  
+  
+  
+  
+
+
+<figure class="highlight  language-">
+  <figcaption>
+    
+      <span>systemctl</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br><span class="line">2</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language- "><code class="">systemctl enable frps
+systemctl start frps</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+
+<h4 id="firewall-configuration">Firewall Configuration</h4>
+
+  
+    
+  
+  
+  
+  
+
+
+<figure class="highlight  language-">
+  <figcaption>
+    
+      <span>firewall-cmd</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language- "><code class="">firewall-cmd --permanent --add-port=7000/tcp --add-port=7500/tcp
+firewall-cmd --permanent --add-port=8080/tcp --add-port=8443/tcp
+firewall-cmd --reload</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+
+<h4 id="step-screenshots">Step screenshots</h4>
+<p><img src="https://gitee.com/mciusos/picbed/raw/master/blog/frp/image-20211129090140137.png" alt="image-20211129090140137"></p>
+<h3 id="on-the-client">On the Client:</h3>
+<h4 id="editing-frpcini-configuration-file">Editing frpc.ini Configuration File:</h4>
+
+  
+    
+  
+  
+  
+  
+
+
+<figure class="highlight  language-">
+  <figcaption>
+    
+      <span>frps.ini</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language- "><code class="">[common]
+bind_port = 7000
+dashboard_port = 7500
+vhost_http_port = 8080
+vhost_https_port = 8443
+token = 123456
+dashboard_user = admin
+dashboard_pwd = admin</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+
+<h4 id="firewall-configuration-1">Firewall Configuration</h4>
+
+  
+    
+  
+  
+  
+  
+
+
+<figure class="highlight  language-">
+  <figcaption>
+    
+      <span>firewall-cmd</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br><span class="line">2</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language- "><code class="">sudo firewall-cmd --permanent --add-port=8080/tcp --add-port=8443/tcp
+sudo firewall-cmd --reload</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+
+<h4 id="start-the-service-1">Start the service</h4>
+
+  
+  
+  
+  
+
+
+<figure class="highlight  language-">
+  <figcaption>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language- "><code class="">./frpc -c frpc.ini</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+
+<h4 id="step-screenshots-1">Step screenshots</h4>
+<p><img src="https://gitee.com/mciusos/picbed/raw/master/blog/frp/image-20211129091640134.png" alt="image-20211129091640134"></p>
+<h3 id="test">Test</h3>
+<h4 id="commands">commands</h4>
+
+  
+  
+  
+  
+
+
+<figure class="highlight  language-">
+  <figcaption>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language- "><code class="">yum install -y httpd
+sed -i &#34;/^Listen/cListen 8080&#34; /etc/httpd/conf/httpd.conf
+systemctl start httpd
+echo &#34;this is frp test page&#34; &gt; /var/www/html/index.html
+curl 192.168.1.118:8080
+echo &#34;test content&#34; &gt; /var/www/html/index.html
+curl 192.168.1.118:8080</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+
+<h4 id="step-screenshots-2">Step screenshots</h4>
+<p><img src="https://gitee.com/mciusos/picbed/raw/master/blog/frp/image-20211129094844919.png" alt="image-20211129094844919"></p>
+<h3 id="expand---run-frp-with-docker">expand - Run FRP with Docker</h3>
+
+  
+  
+  
+  
+
+
+<figure class="highlight  language-">
+  <figcaption>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language- "><code class="">mkdir /etc/frp
+cat &gt; /etc/frp/frps.ini &lt;&lt; EOF
+[common]
+bind_port = 7000
+dashboard_port = 7500
+vhost_http_port = 8080
+vhost_https_port = 443
+token = 123456
+dashboard_user = admin
+dashboard_pwd = admin
+EOF
+docker run -d -p 8080:8080 -p 8443:8443 -p 7000:7000 -p 7500:7500 -v /etc/frp/frps.ini:/etc/frp/frps.ini --name frps snowdreamtech/frps</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+
+<h1 id="reference">reference</h1>
+<blockquote>
+<p>Complete documentation</p>
+</blockquote>
+<p><a href="https://gofrp.org/docs">https://gofrp.org/docs</a></p>
+<blockquote>
+<p>Download address</p>
+</blockquote>
+<p><a href="https://github.com/fatedier/frp/releases">Releases · fatedier/frp (github.com)</a></p>
+<blockquote>
+<p>documentation</p>
+</blockquote>
+<p><a href="https://github.com/fatedier/frp/blob/dev/README.md">frp/README.md at dev · fatedier/frp (github.com)</a></p>
+<blockquote>
+<p>Docker mirror</p>
+</blockquote>
+<ul>
+<li>
+<p><a href="https://hub.docker.com/r/snowdreamtech/frps">snowdreamtech/frps - Docker Image | Docker Hub</a></p>
+</li>
+<li>
+<p><a href="https://hub.docker.com/r/snowdreamtech/frpc">snowdreamtech/frpc - Docker Image | Docker Hub</a></p>
+</li>
+</ul>
+              
+
+
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://www.plutoblog.ml/tags/intranet-penetration/">Intranet penetration</a>
+
+  <a class="tag tag--primary tag--small" href="https://www.plutoblog.ml/tags/frp/">frp</a>
+
+                  </div>
+                
+              
+            
+            
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://www.plutoblog.ml/2021/11/algorithm-clustering-algorithms-k-means/" data-tooltip="Algorithm - Clustering Algorithms : K-means" aria-label="NEXT: Algorithm - Clustering Algorithms : K-means">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://www.plutoblog.ml/2021/11/error-multiple-contexts-have-a-path-of-/xxx/" data-tooltip="Error - Multiple Contexts have a path of &#34;/xxx&#34;" aria-label="PREVIOUS: Error - Multiple Contexts have a path of &#34;/xxx&#34;">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+  
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="Back to top">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+            
+  
+
+
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2021 Pluto. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="5">
+        
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://www.plutoblog.ml/2021/11/algorithm-clustering-algorithms-k-means/" data-tooltip="Algorithm - Clustering Algorithms : K-means" aria-label="NEXT: Algorithm - Clustering Algorithms : K-means">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://www.plutoblog.ml/2021/11/error-multiple-contexts-have-a-path-of-/xxx/" data-tooltip="Error - Multiple Contexts have a path of &#34;/xxx&#34;" aria-label="PREVIOUS: Error - Multiple Contexts have a path of &#34;/xxx&#34;">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+  
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="Back to top">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+      </div>
+      
+
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-times"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://gitee.com/mciusos/picbed/raw/master/blog/image-20211026094612469.png" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">Pluto</h4>
+    
+      <div id="about-card-bio"><a href="mailto:353998934@qq.com">353998934@qq.com</a></div>
+    
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker-alt"></i>
+        <br/>
+        China
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://www.plutoblog.ml/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js" integrity="sha512-z+/WWfyD5tccCukM4VvONpEtLmbAm5LDu7eKiyMQJ9m7OfPEDL7gENyDRL3Yfe8XAuGsS2fS4xSMnl6d30kqGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="https://www.plutoblog.ml/js/script-yqzy9wdlzix4lbbwdnzvwx3egsne77earqmn73v9uno8aupuph8wfguccut.min.js"></script>
+
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-gE8KAQyFIzV1C9+GZ8TKJHZS2s+n7EjNtC+IMRn1l5+WYJTHOODUM6JSjZhFhqXmc7bG8Av6XXpckA4tYhflnw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/apache.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-EWROca+bote+7Oaaar1F6y74iZj1r1F9rm/ly7o+/FwJopbBaWtsFDmaKoZDd3QiGU2pGacBirHJNivmGLYrow==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/go.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-GDVzAn0wpx1yVtQsRWmFc6PhJiLBPdUic+h4GWgljBh904O3JU10fk9EKNpVyIoPqkFn54rgL2QBG4BmUTMpiQ==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/http.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-UgZlma8NzkrDb/NWgmLIcTrH7i/CSnLLDRFqCSNF5NGPpjKmzyM25qcoXGOup8+cDakKyaiTDd7N4dyH4YT+IA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/less.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-lot9koe73sfXIrUvIPM/UEhuMciN56RPyBdOyZgfO53P2lkWyyXN7J+njcxIIBRV+nVDQeiWtiXg+bLAJZDTfg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/nginx.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-Zd3e7XxHP00TD0Imr0PIfeM0fl0v95kMWuhyAS3Wn1UTSXTkz0OhtRgBAr4JlmADRgiXr4x7lpeUdqaGN8xIog==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/puppet.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-qtqDO052iXMSP+5d/aE/jMtL9vIIGvONgTJziC2K/ZIB1yEGa55WVxGE9/08rSQ62EoDifS9SWVGZ7ihSLhzMA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/scss.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-1NmkjnEDnwwwcu28KoQF8vs3oaPFokQHbmbtwGhFfeDsQZtVFI8zW2aE9O8yMYdpdyKV/5blE4pSWw4Z/Sv97w==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/stylus.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-B2wSfruPjr8EJL6IIzQr1eAuDwrsfIfccNf/LCEdxELCgC/S/ZMt/Uvk80aD79m7IqOqW+Sw8nbkvha20yZpzg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/swift.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-28oDiQZGKUVN6wQ7PSLPNipOcmkCALXKwOi7bnkyFf8QiMZQxG9EQoy/iiNx6Zxj2cG2SbVa4dXKigQhu7GiFw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/yaml.min.js"></script>
+  
+
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+
+
+    
+  </body>
+</html>
+
